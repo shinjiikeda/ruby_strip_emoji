@@ -5,7 +5,15 @@ describe StripEmoji do
     expect(StripEmoji::VERSION).not_to be nil
   end
 
-  it 'does something useful' do
-    expect(false).to eq(true)
+  it 'test case1' do
+    expect(StripEmoji::strip_emoji("test")).to eq 'test'
+  end
+  
+  it 'test case2' do
+    expect(StripEmoji::strip_emoji("test😄")).to eq 'test '
+  end
+
+  it 'test case3' do
+    expect(StripEmoji::strip_emoji("test😄", '(^ ^)')).to eq 'test(^ ^)'
   end
 end
