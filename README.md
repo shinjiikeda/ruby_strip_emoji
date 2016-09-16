@@ -20,6 +20,8 @@ Or install it yourself as:
 
 ## Usage
 
+    require 'strip_emoji'
+    
     str = StripEmoji::strip_emoji("test😄")
 
 
