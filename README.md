@@ -7,7 +7,7 @@ strip emoji or convert substitute charactor.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'strip_emoji'
+gem 'ruby_strip_emoji'
 ```
 
 And then execute:
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install strip_emoji
+    $ gem install ruby_strip_emoji
 
 ## Usage
 
