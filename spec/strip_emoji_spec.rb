@@ -14,6 +14,6 @@ describe StripEmoji do
   end
 
   it 'test case3' do
-    expect(StripEmoji::strip_emoji("test😄", '(^ ^)')).to eq 'test(^ ^)'
+    expect(StripEmoji::strip_emoji("test😄", '*')).to eq 'test*'
   end
 end
