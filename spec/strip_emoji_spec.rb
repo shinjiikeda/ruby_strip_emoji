@@ -16,4 +16,12 @@ describe StripEmoji do
   it 'test case3' do
     expect(StripEmoji::strip_emoji("test😄", '*')).to eq 'test*'
   end
+  
+  it 'test case4' do
+    expect(StripEmoji::strip_emoji("1234567890")).to eq '1234567890'
+  end
+
+  it 'test case5' do
+    expect(StripEmoji::strip_emoji("1️⃣")).to eq ' '
+  end
 end
